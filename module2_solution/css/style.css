@@ -1,14 +1,50 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  font-family:  Arial, Helvetica, serif;
+}
+body{
+margin: 0% 1% 0% 1%;
 }
 h1 {
-  margin-bottom: 15px;
+	margin-top: 15px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 div{
 	float: left;
+	border: 1px solid black;
+}
+
+
+
+#title_1, #title_2, #title_3{
+	width:20%;
+	text-align: center;
+	position: relative;
+	left:80%;
+	margin: 0;
+	border:1px solid black;
+	color: white;
+}
+#title_1{
+	background-color: red;
+}
+#title_2{
+	background-color: green;
+}
+#title_3{
+	background-color: blue;
+}
+.dish1, .dish2, .dish3{
+    	background-color: lightblue;
+    	border:1px solid black;
+}
+
+#para1, #para2, #para3{
+	padding: 10px;
 }
 
 /* Simple Responsive Framework. */
@@ -16,25 +52,43 @@ div{
 /********** Desktop (Large Devices only) **********/
 @media (min-width: 992px) {
   .dish1, .dish2, .dish3{
-  	width:33.33%;
+  	width:32%;
+  }
+  .dish1{
+  	margin: 0% 1% 0% 0%;
+  }
+
+  .dish2{
+  	margin: 0% 1% 0% 1%;
+  }
+
+  .dish3{
+  	margin: 0% 0% 0% 1%;
   }
 }
 
 /********** Tablet (Medium devices only) **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .dish1, .dish2{
-  	width:50%;
+  	width:49%;
   }
-
+  
+  .dish1{
+  	margin: 0% 1% 2% 0%;
+  }
+  .dish2{
+  	margin: 0% 0% 2% 1%;
+  }
   .dish3{
   	width:100%;
   }
-
+  
 }
 
 /********** Mobile (Small devices only) ***********/
 @media (max-width: 767px) {
   .dish1, .dish2, .dish3{
   	width:100%;
+  	margin: 1% 0% 1% 0%;
   }
 }
