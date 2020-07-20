@@ -1,0 +1,46 @@
+
+/* START of Header */
+.navbar{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.navbar-brand{
+	padding-left:16px;
+	padding-right:16px; 
+}
+.nav-item{
+	width: 100%;
+	background-color: #ff0dc3;
+	
+}
+
+/* END of Header */
+
+/* START of Main Body */
+body{
+	background-color: #b8ffb9;
+}
+
+
+.col-xs-12, .col-sm-12 , .col-md-12 , .col-lg-12{
+	background-color: lightgrey;
+	height: 700px;
+}
+/* END of Main Body */
+
+
+/* Large Devices media queries */
+@media (min-width: 992px){ 
+.navbar-expand-lg .navbar-collapse{
+ display: none !important;
+}
+}
+
+@media (max-width: 575.98px){
+	.col-xs-12{
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+}
+
